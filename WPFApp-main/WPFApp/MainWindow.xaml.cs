@@ -74,10 +74,11 @@ namespace WPFApp
             AddMessage("En El Hilo Principal");
 	}
 
-	void ShowMessage()
+	/*void ShowMessage()
 	{
 		MessageBox.Show("Ejecutando el método ShowMessage");
 	}
+	*/
 
 }
 }
