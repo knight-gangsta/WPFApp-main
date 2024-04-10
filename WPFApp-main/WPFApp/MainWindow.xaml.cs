@@ -33,7 +33,7 @@ namespace WPFApp
 			});
 		}
 
-		void CreateTask()
+		/*void CreateTask()
 		{
 			Task T;
 			// ¿Qué es un delegado? Apuntadores a funciones.
@@ -45,7 +45,7 @@ namespace WPFApp
 			{
 				MessageBox.Show("Ejecutando una tarea en un método anónimo.");
 			}
-			);
+			);*/
 
 			//Expresión Lambda:
 			//(parámetros de entrada) => Expresión
@@ -74,11 +74,11 @@ namespace WPFApp
             AddMessage("En El Hilo Principal");
 	}
 
-	/*void ShowMessage()
+	void ShowMessage()
 	{
 		MessageBox.Show("Ejecutando el método ShowMessage");
 	}
-	*/
+	
 
 }
 }
