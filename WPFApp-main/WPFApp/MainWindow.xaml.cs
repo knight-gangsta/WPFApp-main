@@ -21,7 +21,7 @@ namespace WPFApp
 			InitializeComponent();
 			CreateTask();
 		}
-		/*
+		
 		void AddMessage(string message)
 		{
 			int CurrentThreadId = Thread.CurrentThread.ManagedThreadId;
@@ -31,7 +31,7 @@ namespace WPFApp
 				   $"Mensaje: {message}, " +
 				   $"Hilo Actual: {CurrentThreadId}\n";
 			});
-		}*/
+		}
 
 		void CreateTask()
 		{
