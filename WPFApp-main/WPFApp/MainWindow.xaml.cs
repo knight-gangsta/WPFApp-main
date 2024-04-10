@@ -22,7 +22,7 @@ namespace WPFApp
 			CreateTask();
 		}
 
-		void AddMessage(string message)
+		/*void AddMessage(string message)
 		{
 			int CurrentThreadId = Thread.CurrentThread.ManagedThreadId;
 			this.Dispatcher.Invoke(() =>
@@ -31,7 +31,7 @@ namespace WPFApp
 				   $"Mensaje: {message}, " +
 				   $"Hilo Actual: {CurrentThreadId}\n";
 			});
-		}
+		}*/
 
 		void CreateTask()
 		{
@@ -52,7 +52,7 @@ namespace WPFApp
 			EJ: () => Expresión
 			 El operador lambda (=>) se lee como "Va Hacia"*/
 
-			/*Task T3A = new Task(ShowMessage);
+			Task T3A = new Task(ShowMessage);
 			Task T3 = new Task(() => ShowMessage());
 
 			Task T4 = new Task(() => MessageBox.Show("Ejecutando la tarea 4"));
@@ -66,7 +66,7 @@ namespace WPFApp
 				);
 
 			Task T6 = new Task((message) =>
-			MessageBox.Show(message.ToString()), "Expresión Lambda con parámetros");*/
+			MessageBox.Show(message.ToString()), "Expresión Lambda con parámetros");
 		}
 		Task T7 = new Task(() => AddMessage("Ejecutando la tarea."));
 		T7.Start();
