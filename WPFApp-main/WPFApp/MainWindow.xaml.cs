@@ -21,8 +21,8 @@ namespace WPFApp
 			InitializeComponent();
 			CreateTask();
 		}
-
-		/*void AddMessage(string message)
+		/*
+		void AddMessage(string message)
 		{
 			int CurrentThreadId = Thread.CurrentThread.ManagedThreadId;
 			this.Dispatcher.Invoke(() =>
